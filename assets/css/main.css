@@ -311,6 +311,26 @@ input, select, textarea {
 			justify-content: flex-end;
 		}
 
+
+		.row.align-items-center {
+			display: flex;
+			align-items: center;
+		}
+		
+		/* header {
+			text-align: left;
+		} */
+		
+		img {
+			display: block;
+			margin-left: auto;
+		}
+
+
+
+
+
+
 		.row.aln-top {
 			align-items: flex-start;
 		}
@@ -1736,8 +1756,18 @@ input, select, textarea {
 		input[type="reset"].large,
 		button.large,
 		.button.large {
-			font-size: 1.5em;
+			font-size: 1.2em;
 			letter-spacing: -0.025em;
+		}
+
+		input[type="button"].small,
+		input[type="submit"].small,
+		input[type="reset"].small,
+		button.small,
+		.button.small {
+			font-size: 0.8em;
+			letter-spacing: -0.025em;
+			/* padding: 0.5em 2em 0.5em 2em; */
 		}
 
 		input[type="button"].alt,
@@ -1766,6 +1796,19 @@ input, select, textarea {
 				background-color: #3f3f3f;
 			}
 
+
+			.header-buttons {
+				display: flex;
+				justify-content: center;
+				gap: 10px; /* Adjust the gap between buttons as needed */
+				margin-top: 15px; /* Adjust the top margin as needed */
+			}
+			
+			.header-buttons .button {
+				margin: 0; /* Remove any existing margins on buttons */
+				background-color: #000000;
+				color: #000000;
+			}
 /* List */
 
 	ul {
@@ -1825,7 +1868,7 @@ input, select, textarea {
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
 					transition: background-color .2s ease-in-out;
-					background-color: #444;
+					/* background-color: #444; */
 					border-radius: 6px;
 					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
 					color: #2E2E2E !important;
@@ -1838,6 +1881,7 @@ input, select, textarea {
 					overflow: hidden;
 					text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
 					width: 48px;
+					background-color: inherit;
 				}
 
 				ul.social li a.fa-twitter {
@@ -1853,7 +1897,7 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-linkedin-in {
-					background-color: #006599;
+					background-color: #2B82EA;
 				}
 
 				ul.social li a.fa-tumblr {
@@ -1862,6 +1906,10 @@ input, select, textarea {
 
 				ul.social li a.fa-google-plus {
 					background-color: #DA2713;
+				}
+
+				ul.social li a.fa-google {
+					background-color: #f84531;
 				}
 
 				ul.social li a.fa-github {
@@ -2334,7 +2382,7 @@ input, select, textarea {
 				input[type="reset"].large,
 				button.large,
 				.button.large {
-					font-size: 1.2em;
+					font-size: 1em;
 					letter-spacing: 0;
 				}
 
